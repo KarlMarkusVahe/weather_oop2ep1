@@ -4,8 +4,9 @@ class UI {
         this.temp = document.querySelector('#temp')
         this.city = document.querySelector('#location')
     }
+
     drawWeather(data) {
-        let celcius = Math.round(parseFloat(data.main.temp)-273.15)
+        let celcius = Math.round(parseFloat(data.main.temp) - 273.15)
         let description = data.weather[0].description;
 
         this.description.innerHTML = description;
